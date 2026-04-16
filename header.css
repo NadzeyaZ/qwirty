@@ -15,7 +15,7 @@ header {
 .pagemenu,
 .links {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   gap: 1rem;
   margin-left: 13%;
   margin-right: 13%;

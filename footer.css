@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+footer {
+  background-color: cornflowerblue;
+  color: white;
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.footerlinks {
+  margin: 10px;
+}
+
+.footerlinks h3 {
+  border-bottom: 2px solid white;
+}
