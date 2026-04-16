@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+  background-color: cornflowerblue;
+  min-height: 4vh;
+}
+
+.pagemenu,
+.links {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-left: 13%;
+  margin-right: 13%;
+}
+
+.pagemenu a,
+.links a {
+  color: white;
+  text-decoration: none;
+}
