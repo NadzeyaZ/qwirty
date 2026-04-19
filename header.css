@@ -14,7 +14,13 @@ header {
   justify-content: space-around;
   align-items: center;
   background-color: cornflowerblue;
-  height: 3vh;
+  max-height: auto;
+}
+
+.pagemenu,
+.links {
+  display: flex;
+  flex-direction: column;
 }
 
 .pagemenu a,
@@ -24,11 +30,16 @@ header {
   margin: 6px;
 }
 
+search {
+  display: flex;
+}
+
 .topbar {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 7%;
+  gap: 10px;
   padding: 20px;
 }
 
@@ -37,14 +48,15 @@ header {
 }
 
 search input {
-  width: 80vh;
-  height: 3vh;
+  width: 40vh;
+  height: 5vh;
   border-color: cornflowerblue;
 }
 
 search button {
-  width: 3vh;
-  height: 3vh;
+  width: 5vh;
+  height: 5vh;
+  margin-left: 5px;
   background-color: cornflowerblue;
   border: none;
   color: white;
@@ -58,11 +70,20 @@ search button {
   text-decoration: none;
 }
 
-@media (width < 768px) {
+@media (min-width: 768px) {
   .topbar {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     gap: 1rem;
+  }
+
+  search input {
+    width: 80vh;
+  }
+
+  .pagemenu,
+  .links {
+    flex-direction: row;
   }
 }

@@ -31,7 +31,7 @@ li a {
 
 .items {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .product {
@@ -70,8 +70,9 @@ li a {
   margin: 3px;
 }
 
-@media (width < 768px) {
+/* desktop */
+@media (min-width: 768px) {
   .items {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
   }
 }
